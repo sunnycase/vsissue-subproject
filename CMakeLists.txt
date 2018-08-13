@@ -4,6 +4,6 @@
 cmake_minimum_required (VERSION 3.8)
 
 # 将源添加到此项目的可执行文件。
-add_executable (SubProject "SubProject.cpp" "SubProject.h")
-
+add_library (SubProject STATIC "SubProject.cpp" "SubProject.h")
+target_include_directories(SubProject PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
 # TODO: 如有需要，请添加测试并安装目标。

@@ -5,8 +5,7 @@
 
 using namespace std;
 
-int main()
+void foo()
 {
-	cout << "Hello CMake。" << endl;
-	return 0;
+
 }
